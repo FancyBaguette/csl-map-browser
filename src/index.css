@@ -1,0 +1,8 @@
+/*noinspection CssUnknownTarget*/
+@import 'https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap';
+/*noinspection CssUnknownTarget*/
+@import url('https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css');
+
+body {
+    font-family: 'Rubik', Helvetica, sans-serif;
+}
