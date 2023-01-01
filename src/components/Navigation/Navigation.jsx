@@ -1,11 +1,11 @@
-import "./Header.scss";
+import "./Navigation.scss";
 import { Link } from "react-router-dom";
 
-const Header = ({ menuFunction }) => {
+const Navigation = ({ menuFunction }) => {
   return (
-    <header className="header">
-      <nav className="header-inner">
-        <span className="header-brand">
+    <nav className="nav-bar">
+      <div className="nav-inner">
+        <span className="nav-brand">
           <Link to={"/"}>CSL Map Browser</Link>
         </span>
 
@@ -16,16 +16,16 @@ const Header = ({ menuFunction }) => {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/maps"}>Maps</Link>
+              <Link to={"/credits"}>Credits</Link>
             </li>
             <li>
-              <Link to={"/credits"}>Credits</Link>
+              <a href="https://github.com/FancyBaguette/csl-map-browser">Github</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 
-export default Header;
+export default Navigation;

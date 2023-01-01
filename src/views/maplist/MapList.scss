@@ -1,0 +1,31 @@
+.search-options {
+  min-width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6ed2f2;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.map-name-input {
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  padding: .3em 1em;
+}
+
+.map-list {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+}
+
+.maps-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

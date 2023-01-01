@@ -17,6 +17,9 @@ const HamburgerMenu = ({ menuFunction }) => {
           <li>
             <Link to={"/credits"}>Credits</Link>
           </li>
+          <li>
+            <a href="https://github.com/FancyBaguette/csl-map-browser">Github</a>
+          </li>
         </ul>
       </nav>
     </>

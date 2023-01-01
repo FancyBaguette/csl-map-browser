@@ -1,5 +1,22 @@
 .map-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem;
   border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.map-card-title {
+  text-align: center;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.map-card-preview {
   border-radius: 16px;
+  min-height: 170px;
+  max-width: 300px;
+  max-height: 200px;
 }

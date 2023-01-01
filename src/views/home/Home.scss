@@ -1,0 +1,16 @@
+.hero-wrapper {
+  background-image: url(../../assets/backgrounds/hero.jpg);
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  min-height: calc(100vh - 300px);
+}
+
+.hero-inner {
+  max-width: 1024px;
+  padding: 0 1rem;
+}

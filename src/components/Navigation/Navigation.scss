@@ -1,27 +1,11 @@
 @use '../../scss/_colors.scss';
-//@use '../../scss/_measurements.scss';
+@use '../../scss/_measurements.scss';
 
-.header {
-  background-color: white;
-  padding: 1rem 3rem;
-
-  a {
-    text-decoration: none;
-  }
-  a:visited {
-    color: inherit;
-  }
-}
-
-.header-inner {
+.nav-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.header-brand {
-  font-size: 2rem;
-  font-weight: 500;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 .nav-list {
@@ -32,10 +16,14 @@
   gap: 2rem;
 }
 
+.nav-brand {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
 .hamburger-menu-btn {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
+  //position: absolute;
+  //top: .75rem;
+  //right: 1rem;
   display: none;
   background-image: url(../../assets/icons/hamburger-menu.svg);
   background-size: cover;
