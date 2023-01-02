@@ -1,0 +1,63 @@
+@use '../../scss/_colors.scss';
+@use '../../scss/_measurements.scss';
+@use 'react-accessible-accordion/dist/fancy-example.css';
+
+.map-page-wrapper {
+  margin: 2rem auto 0 auto;
+  padding: 0 2rem;
+  max-width: measurements.$preferred-app-width;
+}
+
+.map-lat-lng {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  img {
+    max-width: 16px;
+    max-height: 16px;
+  }
+}
+
+.map-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  text-align: center;
+
+  &[data-columns='2'] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &[data-columns='3'] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e3e3e3;
+    padding: .5em .3em;
+  }
+
+}
+
+.map-table-heading {
+  background-color: #b7bdc5;
+}
+
+// Accordion styles
+
+.accordion {
+  margin: 2rem 0;
+}
+
+.accordion__item {
+  border-radius: measurements.$border-radius-medium;
+}
+
+.accordion__panel {
+  padding: 1rem;
+}
+
+

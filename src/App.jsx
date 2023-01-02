@@ -39,6 +39,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/maps/:name" element={<MapPage />} />
           <Route path="/credits" element={<Credits />} />
+          <Route path="*" element={<h1>Page not found</h1>} />
         </Routes>
       </div>
 

@@ -39,7 +39,7 @@
 }
 
 .map-card-preview {
-  border-radius: 16px;
+  border-radius: measurements.$border-radius-big;
   min-height: 170px;
   max-width: 300px;
   max-height: 200px;
