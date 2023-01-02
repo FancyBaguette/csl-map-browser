@@ -17,7 +17,18 @@ const MapList = () => {
                 {desiredMapList.map((element, index) => {
                     return (
                         <Link key={index} to={`/maps/${element.name}`}>
-                            <MapCard key={index} name={element.display_name} image={element.image}/>
+                            <MapCard
+                                key={index}
+                                dlc={element.dlc}
+                                name={element.display_name}
+                                image={element.image}
+                                buildableLandArea={element.buildable_land_area}
+                                highwayConnections={element.highways}
+                                railConnections={element.rails}
+                                shipConnections={element.ships}
+                                planeConnections={element.airways}
+                                resources={element.resources}
+                            />
                         </Link>
                     )
                 })}

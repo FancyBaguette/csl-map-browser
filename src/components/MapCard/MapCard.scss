@@ -1,17 +1,41 @@
+@use '../../scss/_colors.scss';
+@use '../../scss/_measurements.scss';
+
 .map-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   border: 1px solid #e3e3e3;
-  border-radius: 8px;
+  border-radius: measurements.$border-radius-medium;
   background-color: white;
 }
 
+.map-card-dlc {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top-left-radius: measurements.$border-radius-medium;
+  border-top-right-radius: measurements.$border-radius-medium;
+  position: absolute;
+  top: 0;
+  font-size: .75rem;
+  &[data-dlc="Vanilla"] {
+    background-color: colors.$dlc-vanilla;
+  }
+  &[data-dlc="Industries"] {
+    background-color: colors.$dlc-industries;
+  }
+}
+
 .map-card-title {
+  display: block;
   text-align: center;
   font-size: clamp(1.25rem, 2vw, 1.75rem);
+  margin-top: 1rem;
 }
 
 .map-card-preview {
@@ -19,4 +43,21 @@
   min-height: 170px;
   max-width: 300px;
   max-height: 200px;
+}
+
+.map-card-connections {
+  display: flex;
+  gap: 1rem;
+}
+
+.map-card-connection-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.map-stats-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }

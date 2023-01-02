@@ -1,0 +1,21 @@
+.map-stat-bar-wrapper {
+  display: flex;
+  gap: .5rem;
+  img {
+    max-height: 30px;
+  }
+}
+
+.map-stat-bar {
+  background-color: #e3e3e3;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 30px;
+}
+
+.map-stat-bar-progress {
+  min-height: 30px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #82AAE3;
+}
