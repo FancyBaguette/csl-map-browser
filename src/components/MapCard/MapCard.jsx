@@ -6,16 +6,6 @@ import PlaneIcon from "../../assets/icons/plane.svg"
 import MapStatBar from "../MapStatBar/MapStatBar.jsx";
 const MapCard = (props) => {
 
-    // const getStatBars = (obj) => {
-    //     for (const resource in obj) {
-    //         console.log(resource)
-    //     }
-    // }
-    //
-    // getStatBars(props.resources)
-
-    console.log(props.resources.forestry)
-
     return (
         <article className="map-card">
             <span
@@ -28,8 +18,9 @@ const MapCard = (props) => {
             <span className="map-card-title">{props.name}</span>
             <img
                 src={props.image}
-                alt={`${props.name} screenshot. Images, logos, and other official Cities: Skylines content copyright © 2014 Paradox Interactive AB. paradoxplaza.com`}
+                alt={`${props.name} preview image. Images, logos, and other official Cities: Skylines content copyright © 2014 Paradox Interactive AB`}
                 className="map-card-preview"
+                loading={'lazy'}
             />
             <span className="map-card-buildable-area">Buildable Land Area: {props.buildableLandArea}%</span>
             <div className="map-card-connections">
@@ -58,6 +49,7 @@ const MapCard = (props) => {
                     />
                 }
                 {props.planeConnections &&
+
                     <img
                         src={PlaneIcon}
                         alt="Planes"
@@ -67,11 +59,11 @@ const MapCard = (props) => {
                 }
             </div>
             <div className="map-stats-wrapper">
-                <MapStatBar statType={'oil'} percentage={props.resources.oil}/>
-                <MapStatBar statType={'ore'} percentage={props.resources.ore}/>
-                <MapStatBar statType={'fertileLand'} percentage={props.resources.fertile_land}/>
-                <MapStatBar statType={'forestry'} percentage={props.resources.forestry}/>
-                <MapStatBar statType={'water'} percentage={props.resources.water}/>
+                <MapStatBar statType={'oil'} percentage={props.resources.oil} hidePercentages/>
+                <MapStatBar statType={'ore'} percentage={props.resources.ore} hidePercentages/>
+                <MapStatBar statType={'fertileLand'} percentage={props.resources.fertile_land} hidePercentages/>
+                <MapStatBar statType={'forestry'} percentage={props.resources.forestry} hidePercentages/>
+                <MapStatBar statType={'water'} percentage={props.resources.water} hidePercentages/>
             </div>
             <span className="map-card-note">Click anywhere for more details</span>
         </article>

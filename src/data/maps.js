@@ -136,10 +136,10 @@ export default [
       outgoing: 4,
     },
     resources: {
-      forestry: 9.98977,
-      fertile_land: 4.79044,
-      ore: 8.70401,
-      oil: 1.53932,
+      forestry: 9.9897,
+      fertile_land: 4.7904,
+      ore: 8.7040,
+      oil: 1.5393,
       water: 22.5007,
     },
     atmospheric_events: {

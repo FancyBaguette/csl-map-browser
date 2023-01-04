@@ -21,6 +21,7 @@
   background-color: whitesmoke;
   padding: 2rem 1rem;
   border-radius: 16px;
+  min-height: 698px;
 }
 
 .maps-wrapper {
@@ -28,4 +29,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.loading {
+  margin-top: 2rem;
+  font-size: 2rem;
 }

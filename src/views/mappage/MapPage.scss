@@ -2,12 +2,6 @@
 @use '../../scss/_measurements.scss';
 @use 'react-accessible-accordion/dist/fancy-example.css';
 
-.map-page-wrapper {
-  margin: 2rem auto 0 auto;
-  padding: 0 2rem;
-  max-width: measurements.$preferred-app-width;
-}
-
 .map-lat-lng {
   display: flex;
   gap: .5rem;

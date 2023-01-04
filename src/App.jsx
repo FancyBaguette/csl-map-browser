@@ -1,15 +1,15 @@
-import { Link, Route, Routes, useLocation } from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import Home from "./views/home/Home.jsx";
 import Credits from "./views/credits/Credits.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import "./App.scss";
-import MapList from "./views/maplist/MapList.jsx";
 import MapPage from "./views/mappage/MapPage.jsx";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import Portal from "react-portal/lib/Portal.js";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu.jsx";
 
 const App = () => {
+
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
 
   const toggleHamburgerMenu = () => {
@@ -34,14 +34,14 @@ const App = () => {
     <>
       <Navigation menuFunction={toggleHamburgerMenu} />
 
-      <div className="page-content">
+      <main className="page-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/maps/:name" element={<MapPage />} />
           <Route path="/credits" element={<Credits />} />
-          <Route path="*" element={<h1>Page not found</h1>} />
+          <Route path="*" element={<main className="main-content-wrapper"><h1>404</h1><p>Not found</p></main>} />
         </Routes>
-      </div>
+      </main>
 
       {isHamburgerMenuOpen && (
         <Portal>

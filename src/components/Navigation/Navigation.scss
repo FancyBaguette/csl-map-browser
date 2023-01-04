@@ -1,6 +1,10 @@
 @use '../../scss/_colors.scss';
 @use '../../scss/_measurements.scss';
 
+.nav-bar {
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
