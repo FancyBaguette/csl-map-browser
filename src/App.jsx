@@ -31,24 +31,25 @@ const App = () => {
   }, [location]);
 
   return (
-    <>
-      <Navigation menuFunction={toggleHamburgerMenu} />
+      <>
+          <Navigation menuFunction={toggleHamburgerMenu} />
 
-      <main className="page-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/maps/:name" element={<MapPage />} />
-          <Route path="/credits" element={<Credits />} />
-          <Route path="*" element={<main className="main-content-wrapper"><h1>404</h1><p>Not found</p></main>} />
-        </Routes>
-      </main>
+          <main className="page-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/maps/:name" element={<MapPage />} />
+              <Route path="/credits" element={<Credits />} />
+              {/*<Route path="/tests" element={<Tests/>}/>*/}
+              <Route path="*" element={<main className="main-content-wrapper"><h1>404</h1><p>Not found</p></main>} />
+            </Routes>
+          </main>
 
-      {isHamburgerMenuOpen && (
-        <Portal>
-          <HamburgerMenu menuFunction={toggleHamburgerMenu} />
-        </Portal>
-      )}
-    </>
+          {isHamburgerMenuOpen && (
+              <Portal>
+                <HamburgerMenu menuFunction={toggleHamburgerMenu} />
+              </Portal>
+          )}
+      </>
   );
 };
 

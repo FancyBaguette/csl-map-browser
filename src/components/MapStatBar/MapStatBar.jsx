@@ -28,7 +28,7 @@ const MapStatBar = (props) => {
                 props.statType === "water" &&
                 <img src={WaterIcon} alt="Water"/>
             }
-            <div className="map-stat-bar" title={`${props.statType} percentage is ${props.percentage.toFixed(2)}%`}>
+            <div className="map-stat-bar" title={`${props.statType} approx. percentage is ${props.percentage.toFixed(2)}%`}>
                 <div className="map-stat-bar-progress" style={{width: `${props.percentage}%`}} data-stat-type={props.statType}/>
                 {!props.hidePercentages && `${props.percentage.toFixed(2)}%`}
             </div>

@@ -6,7 +6,7 @@ const Navigation = ({ menuFunction }) => {
     <nav className="nav-bar">
       <div className="nav-inner">
         <span className="nav-brand">
-          <Link to={"/"}>CSL Map Browser</Link>
+          <Link to={"/"}>Skylines Atlas</Link>
         </span>
 
         <div>

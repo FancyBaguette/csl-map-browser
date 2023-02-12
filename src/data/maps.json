@@ -1,0 +1,153 @@
+{
+  "maps": {
+    "black_woods": {
+      "airways": {
+        "incoming": 4,
+        "outgoing": 4
+      },
+      "atmospheric_events": {
+        "daytime_fog": 15,
+        "daytime_rain": 15,
+        "nighttime_fog": 20,
+        "nighttime_rain": 20,
+        "northern_lights": 25
+      },
+      "buildable_land_area": 69,
+      "display_name": "Black Woods",
+      "dlc": "Vanilla",
+      "highways": {
+        "incoming": 4,
+        "outgoing": 4
+      },
+      "latitude": 66,
+      "longitude": 98,
+      "map_type": "Boreal",
+      "milestones": {
+        "little_hamlet": 320,
+        "worthy_village": 320,
+        "tiny_town": 650,
+        "boom_town": 1800,
+        "busy_town": 3600,
+        "big_town": 5500,
+        "small_city": 7500,
+        "big_city": 12000,
+        "grand_city": 15000,
+        "capital_city": 24000,
+        "colossal_city": 34000,
+        "metropolis": 48000
+      },
+      "name": "black_woods",
+      "railways": {
+        "incoming": 4,
+        "outgoing": 4
+      },
+      "resources": {
+        "fertile_land": 3.2577,
+        "forestry": 18.5491,
+        "oil": 5.655,
+        "ore": 5.9107,
+        "water": 21.7079
+      },
+      "screenshots": {
+        "preview_image": "https://firebasestorage.googleapis.com/v0/b/csl-map-browser.appspot.com/o/map_screenshots%2Fblack_woods%2Fpreview_image.webp?alt=media&token=9a80f9d7-f360-499b-bd4e-b007dff1e5de",
+        "terrain": "https://firebasestorage.googleapis.com/v0/b/csl-map-browser.appspot.com/o/map_screenshots%2Fblack_woods%2Fterrain.webp?alt=media&token=404aab2d-85fd-4c48-ac68-f911a80f6e1d"
+      },
+      "ships": {
+        "incoming": 1,
+        "outgoing": 1
+      },
+      "temperatures": {
+        "daytime": {
+          "max": 25,
+          "min": 10
+        },
+        "fog": {
+          "max": 15,
+          "min": 5
+        },
+        "nighttime": {
+          "max": 11,
+          "min": 1
+        },
+        "rain": {
+          "max": 15,
+          "min": 5
+        }
+      }
+    },
+    "cliffside_bay": {
+      "airways": {
+        "incoming": 4,
+        "outgoing": 4
+      },
+      "atmospheric_events": {
+        "daytime_fog": 15,
+        "daytime_rain": 15,
+        "nighttime_fog": 20,
+        "nighttime_rain": 20,
+        "northern_lights": 0
+      },
+      "buildable_land_area": 53,
+      "display_name": "Cliffside Bay",
+      "dlc": "Vanilla",
+      "highways": {
+        "incoming": 2,
+        "outgoing": 2
+      },
+      "latitude": 40,
+      "longitude": 98,
+      "map_type": "European",
+      "milestones": {
+        "little_hamlet": 400,
+        "worthy_village": 400,
+        "tiny_town": 1300,
+        "boom_town": 2200,
+        "busy_town": 4200,
+        "big_town": 6500,
+        "small_city": 8500,
+        "big_city": 14000,
+        "grand_city": 17000,
+        "capital_city": 28000,
+        "colossal_city": 36000,
+        "metropolis": 55000
+      },
+      "name": "cliffside_bay",
+      "railways": {
+        "incoming": 2,
+        "outgoing": 2
+      },
+      "resources": {
+        "fertile_land": 4.7904,
+        "forestry": 9.9897,
+        "oil": 1.5393,
+        "ore": 8.704,
+        "water": 22.5007
+      },
+      "screenshots": {
+        "preview_image": "https://firebasestorage.googleapis.com/v0/b/csl-map-browser.appspot.com/o/map_screenshots%2Fcliffside_bay%2Fpreview_image.webp?alt=media&token=29c72fc0-ead1-445f-8803-38b5351acd54"
+      },
+      "ships": {
+        "incoming": 3,
+        "outgoing": 3
+      },
+      "temperatures": {
+        "daytime": {
+          "max": 30,
+          "min": 15
+        },
+        "fog": {
+          "max": 15,
+          "min": 5
+        },
+        "nighttime": {
+          "max": 16,
+          "min": 1
+        },
+        "rain": {
+          "max": 15,
+          "min": 5
+        }
+      }
+    }
+  }
+}

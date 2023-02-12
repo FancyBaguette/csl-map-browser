@@ -1,5 +1,5 @@
 import './Home.scss'
-import MapList from "../maplist/MapList.jsx";
+import MapList from "../../components/MapList/MapList.jsx";
 const Home = () => {
     return  (
         <>

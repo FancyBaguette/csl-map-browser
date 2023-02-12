@@ -2,6 +2,36 @@
 @use '../../scss/_measurements.scss';
 @use 'react-accessible-accordion/dist/fancy-example.css';
 
+.map-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    max-height: 136px;
+    border-radius: measurements.$border-radius-big;
+  }
+}
+
+.map-metadata {
+  img {
+    display: inline;
+    vertical-align: middle;
+    max-height: 1em;
+    max-width: 1em;
+  }
+}
+
+.map-title,
+.map-type,
+.map-dlc {
+  display: block;
+}
+
+.map-title {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+}
+
 .map-lat-lng {
   display: flex;
   gap: .5rem;
@@ -46,12 +76,19 @@
   margin: 2rem 0;
 }
 
-.accordion__item {
-  border-radius: measurements.$border-radius-medium;
-}
-
 .accordion__panel {
   padding: 1rem;
+}
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  img {
+    display: inline;
+    max-width: 1em;
+    max-height: 1em;
+  }
 }
 
 

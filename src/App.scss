@@ -1,7 +1,12 @@
 @use './scss/_measurements.scss';
+@use './scss/_colors.scss';
 
 .main-content-wrapper {
   margin: 2rem auto 0 auto;
   padding: 0 2rem;
   max-width: measurements.$preferred-app-width;
 }
+
+
+
+
