@@ -2,7 +2,7 @@
   "name": "csl-map-browser",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fancybaguette.github.io/csl-map-browser",
+  "homepage": "https://fancybaguette.github.io/skylines-atlas",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
