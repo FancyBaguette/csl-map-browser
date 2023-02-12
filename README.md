@@ -1,4 +1,4 @@
-# 🗺 CSL Map Browser
+# 🗺 Skylines Atlas
 **⚠ WORK IN PROGRESS ⚠**
 
 An app for browsing all available maps in the game Cities: Skylines<br>
