@@ -1,7 +1,7 @@
 # 🗺 Skylines Atlas
 **⚠ WORK IN PROGRESS ⚠**
 
-An app for browsing all available maps in the game Cities: Skylines<br>
+An app made with React and Firebase for browsing all available maps in the game Cities: Skylines<br>
 Check stuff like:
 - Milestone population requirements
 - Transportation info (incoming and outgoing connections)
@@ -15,3 +15,5 @@ Check stuff like:
 I'm creating
 this app because the mentioned website is very hard to read and is unresponsive. My goal with this app is to essentially create
 more accessible and more comfortable to use version of that website.
+
+**TODO: Add data for all of the maps (2/70) 😭**
